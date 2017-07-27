@@ -4,7 +4,12 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-
+//<?php
+//session_start();
+//if($name=$_SESSION['name']){
+//    header("location:signout.php");
+//}
+//?>
 <html>
     <head> 
         <title>form </title>    
@@ -16,9 +21,9 @@ and open the template in the editor.
     <body>
         <h1> REGISTRATION  FORM</h1>
         <div id="content">
-               
-              <form method="post" action="registration.php">   <table align="center">
-                     
+
+            <form method="post" action="registration.php" enctype="multipart/form-data">   <table align="center">
+
                     <tr><td>1.Name :</td><td><input type="text" id="name" name="Firstname"  value="">
                             <span class="hidden" id="nameu"></span></td></tr>
                     <tr><td>2.Password :</td><td><input type="password" id="pwd" name="Password"  value="">
@@ -34,15 +39,17 @@ and open the template in the editor.
 
                     <tr><td>6.Date of Birth</td><td> <input type="date" id="date" name="DOB" value="">
                             <span class="" id="dob"></span></td></tr>
-            <!--                     <tr><td>7.picture:</td><td> <input type="file" id="picture" name="Picture" value="">
-                                         <input type="submit" id="picture" name="Picture" value="upload">
-                                     <span class="" id="pic"></span></td></tr>-->
+                    <tr><td>7.picture:</td><td> <input type="file" id="picture" name="picture">
                     <tr><td>8.Address :</td><td> <input type="text" id="address" name="Address" value="">
                             <span class="" id="add"></span></td></tr>
                     <tr><td><input type="submit" name="submit" id="submit"></td></tr>
 
                 </table> 
             </form> 
-        </div>          
+             <div >
+        <p>already register<a href="login.php">Login</a></p></div>
+        </div>  
+       
     </body>
-</ht<ml>
+    
+</html>

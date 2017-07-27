@@ -26,16 +26,11 @@ $(document).ready(function () {
         }
     });
 
-    $("#email").blur(function () {
+   $("#email").blur(function () {
 
         var mail = $('#email').val();
-        
-
-
-        var emailReg = /^[A-Za-z0-9._]*\@[A-Za-z]+\.[A-Za-z]{2,5}$/;
-
+              var emailReg = /^[A-Za-z0-9._]*\@[A-Za-z]+\.[A-Za-z]{2,5}$/;
         if (!emailReg.test(mail))
-
         {
             $('#mail').removeClass('hidden');
             $('#mail').text("Invalid Mail ID");
@@ -66,13 +61,8 @@ $(document).ready(function () {
         }
     });
     $("#date").blur(function () {
-        var date = $('#date').val();
-
-       
-
-     
-
-        if (date =='')
+        var dat = $('#date').val();
+       if (dat =='')
 
         {
             $('#dob').removeClass('hidden');
@@ -116,3 +106,4 @@ $(document).ready(function () {
      
  });
 });
+  
