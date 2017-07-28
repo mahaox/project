@@ -1,9 +1,8 @@
 $(document).ready(function () {
     $("#name").blur(function () {
-              var name = $('#name').val();
-               var nameReg = /^[A-Za-z]+$/;
+        var name = $('#name').val();
+        var nameReg = /^[A-Za-z]+$/;
         if (!nameReg.test(name))
-
         {
             $('#nameu').removeClass('hidden');
             $('#nameu').text("Invalid Name...");
@@ -13,10 +12,8 @@ $(document).ready(function () {
         }
     });
     $("#pwd").blur(function () {
-              var password = $('#pwd').val();
-               
-        if (password =='')
-
+        var password = $('#pwd').val();
+        if (password == '')
         {
             $('#pwrd').removeClass('hidden');
             $('#pwrd').text("Invalid password...");
@@ -25,11 +22,9 @@ $(document).ready(function () {
             $('#pwrd').addClass('hidden');
         }
     });
-
-   $("#email").blur(function () {
-
+    $("#email").blur(function () {
         var mail = $('#email').val();
-              var emailReg = /^[A-Za-z0-9._]*\@[A-Za-z]+\.[A-Za-z]{2,5}$/;
+        var emailReg = /^[A-Za-z0-9._]*\@[A-Za-z]+\.[A-Za-z]{2,5}$/;
         if (!emailReg.test(mail))
         {
             $('#mail').removeClass('hidden');
@@ -40,19 +35,12 @@ $(document).ready(function () {
             $('#mail').addClass('hidden');
         }
     });
-
     $("#mobile").blur(function () {
         var mobile = $('#mobile').val();
-
-       
-
         var mobileVal = /^\d{10}$/;
-
         if (!mobileVal.test($('#mobile').val()))
-
         {
             $('#mob').removeClass('hidden');
-
             $('#mob').text("Invalid Mobile Number");
             return false;
         } else
@@ -62,11 +50,9 @@ $(document).ready(function () {
     });
     $("#date").blur(function () {
         var dat = $('#date').val();
-       if (dat =='')
-
+        if (dat == '')
         {
             $('#dob').removeClass('hidden');
-
             $('#dob').text("Invalid dob");
             return false;
         } else
@@ -74,9 +60,8 @@ $(document).ready(function () {
             $('#dob').addClass('hidden');
         }
     });
-    
     $("#address").blur(function () {
-        var address= $('#address').val();
+        var address = $('#address').val();
         if (address == "")
         {
             $('#add').removeClass('hidden');
@@ -86,24 +71,18 @@ $(document).ready(function () {
         {
             $('#add').addClass('hidden');
         }
-
     });
-    
-    
     $('form').submit(function () {
-    var gender = $('input[type="radio"]:checked');
-     if (gender.length == "")
-     {
-     $('#gen').removeClass('hidden');
-     $('#gen').text("Please Select Your Gender");
-     return false;
-     }
-     else
-     {
-     $('#gen').addClass('hidden');
-     }
-     
-     
- });
+        var gender = $('input[type="radio"]:checked');
+        if (gender.length == "")
+        {
+            $('#gen').removeClass('hidden');
+            $('#gen').text("Please Select Your Gender");
+            return false;
+        } else
+        {
+            $('#gen').addClass('hidden');
+        }
+    });
 });
   

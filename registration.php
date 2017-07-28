@@ -1,7 +1,5 @@
 <?php
-
 include('connection.php');
-
 if (($_POST[submit])) {
     $name = $_POST[Firstname];
     $password = $_POST[Password];

@@ -1,11 +1,10 @@
-
-//<?php
-//session_start();
-//if($name=$_SESSION['name']){
-//    header("location:signout.php");
-//}
-//?>
-    <html>
+<?php
+session_start();
+if ($name = $_SESSION['name']) {
+    header("location:account.php");
+}
+?>
+<html>
     <head><link rel="stylesheet" type="text/css" href="csshome.css">
         <style>
             td {
@@ -19,7 +18,7 @@
             }
             #tab {
                 padding-left: 380px;
-           }
+            }
         </style>
     </head>
     <body>

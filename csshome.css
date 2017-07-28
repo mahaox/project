@@ -6,31 +6,25 @@ button {
     border: none;
     width: 50%;
 }
-
-
 .reg{
     padding: 20px 20px;
     background-color: #696969;
     float: left;
     width: 50%;
 }
-
 .log {
     float: left;
     width: 50%;
 }
-
-
 .outbox{
     padding: 50px;
-     border:2px solid;
-     margin:0px 600px;
+    border:2px solid;
+    margin:0px 600px;
 }
 .innerbox{
     width:100%;
     margin:auto;
 }
-
 .innerbox::after {
     content: "";
     clear: both;
